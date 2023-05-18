@@ -1,0 +1,16 @@
+---
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: app
+  namespace: product
+  labels:
+    release: monitoring
+spec:
+  endpoints:
+  # - enableHttp2: true
+  - path: /metrics
+    port: web
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: app
