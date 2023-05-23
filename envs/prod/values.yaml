@@ -47,8 +47,9 @@ test-app:
     ingress:
       enabled: true
       className: ""
-      annotations: {}
-        # kubernetes.io/ingress.class: nginx
+      prefix: ""
+      annotations:
+        kubernetes.io/ingress.class: nginx
         # kubernetes.io/tls-acme: "true"
       hosts:
         - host: test-app-prod.surajincloud.click
