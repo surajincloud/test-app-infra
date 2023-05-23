@@ -1,0 +1,9 @@
+apiVersion: v2
+name: test-app-stage
+type: application
+version: 1.0.0
+appVersion: "1.0.0"
+dependencies:
+- name: test-app
+  version: 0.1.0
+  repository: https://github.com/surajincloud/test-app-helm-chart # TODO

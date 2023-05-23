@@ -9,6 +9,6 @@ spec:
     server: https://kubernetes.default.svc 
   project: default
   source:
-    repoURL: https://github.com/surajincloud/test-app-helm-chart.git
+    repoURL: https://github.com/surajincloud/test-app-infra
     path: envs/dev
     targetRevision: main
