@@ -9,10 +9,10 @@ test-app:
     environment: dev
 
     image:
-      repository: surajnarwade/test-app
+      repository: quay.io/brancz/prometheus-example-app
       pullPolicy: IfNotPresent
       # Overrides the image tag whose default is the chart appVersion.
-      tag: "latest"
+      tag: "v0.3.0"
 
     imagePullSecrets: []
     nameOverride: ""
