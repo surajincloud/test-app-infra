@@ -6,7 +6,7 @@ test-app:
 
     replicaCount: 1
 
-    environment: dev
+    environment: prod
 
     image:
       repository: nginx
