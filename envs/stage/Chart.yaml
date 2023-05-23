@@ -6,4 +6,4 @@ appVersion: "1.0.0"
 dependencies:
 - name: test-app
   version: 0.1.0
-  repository: https://github.com/surajincloud/test-app-helm-chart # TODO
+  repository: oci://ghcr.io/surajincloud/test-app:0.1.0
