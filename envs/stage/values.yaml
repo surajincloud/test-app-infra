@@ -12,7 +12,7 @@ test-app:
       repository: surajnarwade/stage-test-app
       pullPolicy: IfNotPresent
       # Overrides the image tag whose default is the chart appVersion.
-      tag: "staging-ce5fed0"
+      tag: "staging-fafee3c"
 
     imagePullSecrets: []
     nameOverride: ""
