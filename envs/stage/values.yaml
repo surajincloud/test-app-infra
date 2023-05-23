@@ -9,10 +9,10 @@ test-app:
     environment: stage
 
     image:
-      repository: nginx
+      repository: surajnarwade/stage-test-app
       pullPolicy: IfNotPresent
       # Overrides the image tag whose default is the chart appVersion.
-      tag: ""
+      tag: "staging-ce5fed0"
 
     imagePullSecrets: []
     nameOverride: ""
