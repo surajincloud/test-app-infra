@@ -18,16 +18,22 @@ spec:
   template:
     metadata:
       name: 'test-app-dev-{{branch}}-{{number}}'
+      # Mention THIS
+      # annotations:
+      #   argocd-image-updater.argoproj.io: surajnarwade/dev-test-app:tagname 
     spec:
+      syncPolicy:
+        automated:
+          prune: true    
       source:
-        repoURL: git@github.com:surajincloud/test-app-infra.git
+        repoURL: https://github.com/surajincloud/test-app-infra
         targetRevision: main
         path: envs/dev
         helm:
           parameters:
-          - name: "image.tag"
+          - name: "test-app.image.tag"
             value: "{{branch}}-{{head_sha}}" # override of the image tag
-          - name: "ingress.prefix"
+          - name: "test-app.ingress.prefix"
             value: "{{branch}}" # add a prefix to the URL 
       project: default
       destination:
