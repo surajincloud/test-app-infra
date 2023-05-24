@@ -4,6 +4,8 @@ metadata:
   name: test-app-prod
   namespace: argocd
 spec:
+  syncPolicy:
+    automated: {}
   destination:
     namespace: test-app-prod
     server: https://kubernetes.default.svc 
